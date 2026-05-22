@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Display</title>
+</head>
+<body>
+
+    <h1>Available Products</h1>
+
+    {% for product in all_products %}
+        <div>
+            <h3>{{ product.item_name }}</h3>
+            <p>Price: ₱{{ product.item_price }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
